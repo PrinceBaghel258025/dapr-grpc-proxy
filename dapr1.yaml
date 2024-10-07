@@ -1,0 +1,12 @@
+version: 1
+apps:
+  - appDirPath: receiver
+    appID: invoke-receiver
+    appPort: 50051
+    appProtocol: grpc
+    command:
+      [
+        "python",
+        # "run",
+        "invoke-receiver.py"
+      ]

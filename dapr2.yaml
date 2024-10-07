@@ -1,0 +1,13 @@
+version: 1
+apps:
+
+  - appDirPath: invoker
+    appID: invoker
+    appPort: 50007
+    appProtocol: grpc
+    command:
+      [
+        "python",
+        # "run",
+        "invoke-caller.py"
+      ]
